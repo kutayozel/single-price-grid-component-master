@@ -1,7 +1,7 @@
 :root {
   --cyan: hsl(179, 62%, 43%);
   --darkcyan: hsl(187, 62%, 43%);
-  --yellow: hsla(71, 73%, 54%, 0.774);
+  --yellow: hsla(71, 73%, 54%, 0.493);
 
   --LightGray: hsl(204, 43%, 93%);
   --GrayishBlue: hsl(218, 22%, 67%);
@@ -11,22 +11,35 @@
   box-sizing: border-box;
 }
 
-html, p {
+html,body, p {
   font-family: 'Karla', sans-serif;
   margin: 0;
   padding: 0;
+  line-height: 32px;
+}
+
+.smt {
+
 }
 
 .component {
-  
+  width: 90%;
+  max-width: 300px;
+  margin: 0 auto;
+  /* border: solid 1px rgb(114, 114, 114);
+  border-radius: 4px; */
+  box-shadow: 0px 0px 2px black;
+  border-radius: 3px;
 }
 
 .first {
-
+  background-color: var(--LightGray);
 }
 
 .firsttext {
-  background-color: var(--LightGray);
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
 .f1t {
@@ -37,20 +50,24 @@ html, p {
 
 .f2t {
   color: var(--yellow);
+  text-shadow: 0 0 1px black;
 }
 .f3t {
   color: var(--GrayishBlue);
 }
 
 .second {
-
+  background: var(--darkcyan);
+  
 }
 
 .secondtext {
-  background-color: var(--darkcyan);
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px 0;
 }
 
-.s1t {
+.s1t { 
   color: var(--LightGray);
 }
 
@@ -74,24 +91,35 @@ html, p {
   text-decoration: none;
   border: none;
   display: inline-block;
+  min-width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.alo {
+  text-align: center;
+  margin-top: 15px;
 }
 
 .third {
-
+  background-color: var(--cyan);
 }
 
 .thirdtext {
-  background-color: var(--cyan);
+  width: 90%;
+  margin: 0 auto;
 }
 
 .t1t {
   color: var(--LightGray);
+
 }
 
 .t2t {
   color: var(--LightGray);
   font-weight: 100;
   font-size: small;
+  width: 70%;
 }
 
 
