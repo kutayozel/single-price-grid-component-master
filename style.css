@@ -1,6 +1,98 @@
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --darkcyan: hsl(187, 62%, 43%);
+  --yellow: hsla(71, 73%, 54%, 0.774);
+
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+*{
   box-sizing: border-box;
 }
+
+html, p {
+  font-family: 'Karla', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.component {
+  
+}
+
+.first {
+
+}
+
+.firsttext {
+  background-color: var(--LightGray);
+}
+
+.f1t {
+  font-family: 'Karla Medium 500', sans-serif;
+  color: var(--cyan);
+  font-weight: 700;
+}
+
+.f2t {
+  color: var(--yellow);
+}
+.f3t {
+  color: var(--GrayishBlue);
+}
+
+.second {
+
+}
+
+.secondtext {
+  background-color: var(--darkcyan);
+}
+
+.s1t {
+  color: var(--LightGray);
+}
+
+.s2t {
+  color: var(--GrayishBlue);
+}
+
+.s2t span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--LightGray);
+}
+
+.s3t {
+  color: var(--LightGray);
+}
+
+.s4t {
+  background-color: var(--yellow);
+  color: var(--LightGray);
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+}
+
+.third {
+
+}
+
+.thirdtext {
+  background-color: var(--cyan);
+}
+
+.t1t {
+  color: var(--LightGray);
+}
+
+.t2t {
+  color: var(--LightGray);
+  font-weight: 100;
+  font-size: small;
+}
+
+
 
