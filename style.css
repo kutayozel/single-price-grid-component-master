@@ -11,24 +11,35 @@
   box-sizing: border-box;
 }
 
+html {
+  /* background: url(images/favicon-32x32.png) repeat center center fixed; */
+  /* -webkit-background-size: repeat; */
+  /* -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; */
+}
+
 html,body, p {
   font-family: 'Karla', sans-serif;
   margin: 0;
   padding: 0;
-  line-height: 32px;
+  /* line-height: 32px; */
 }
 
 .smt {
-
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .component {
   width: 90%;
   max-width: 300px;
-  margin: 0 auto;
-  /* border: solid 1px rgb(114, 114, 114);
-  border-radius: 4px; */
-  box-shadow: 0px 0px 2px black;
+  margin: 5px auto;
+  box-shadow: 0px 0px 2px rgb(44, 42, 42);
   border-radius: 3px;
 }
 
@@ -36,16 +47,17 @@ html,body, p {
   background-color: var(--LightGray);
 }
 
-.firsttext {
+.textbox {
   width: 90%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 1em 0;
 }
 
 .f1t {
   font-family: 'Karla Medium 500', sans-serif;
   color: var(--cyan);
   font-weight: 700;
+  margin: 1em 0;
 }
 
 .f2t {
@@ -54,6 +66,7 @@ html,body, p {
 }
 .f3t {
   color: var(--GrayishBlue);
+  margin: 1em 0;
 }
 
 .second {
@@ -61,18 +74,14 @@ html,body, p {
   
 }
 
-.secondtext {
-  width: 90%;
-  margin: 0 auto;
-  padding: 10px 0;
-}
-
 .s1t { 
   color: var(--LightGray);
+  margin: 1em 0;
 }
 
 .s2t {
   color: var(--GrayishBlue);
+  margin-bottom: 0.5em;
 }
 
 .s2t span {
@@ -98,29 +107,37 @@ html,body, p {
 
 .alo {
   text-align: center;
-  margin-top: 15px;
+  margin: 1em 0;
 }
 
 .third {
   background-color: var(--cyan);
 }
 
-.thirdtext {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .t1t {
   color: var(--LightGray);
-
+  margin-bottom:.7em;
 }
 
 .t2t {
   color: var(--LightGray);
   font-weight: 100;
   font-size: small;
-  width: 70%;
+  line-height: 22px;
 }
 
+@media (min-width: 700px) {
+  .component {
+    max-width: 620px;
+    display: grid;
+    grid-template-columns:4fr 4fr; 
+  }
+  .first {
+    grid-column-start: 1;
+    grid-column-end: end;
+  }
+  .second {
+    grid-row-start: 2;
 
-
+  }
+}
